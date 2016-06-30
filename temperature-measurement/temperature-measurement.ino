@@ -1,4 +1,6 @@
-void setup() { Serial.begin(9600); }
+void setup() {
+	Serial.begin(9600);
+}
 
 void loop() {
 	float sensorValue = analogRead(A0);
