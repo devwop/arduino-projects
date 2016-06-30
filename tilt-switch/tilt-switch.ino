@@ -6,6 +6,10 @@ void setup() {
 void loop() {
 	int sensorValue = digitalRead(2);
 
-	if (sensorValue) { digitalWrite(5, LOW); }
-	else { digitalWrite(5, HIGH); }
+	if (sensorValue) {
+		digitalWrite(5, LOW);
+	}
+	else {
+		digitalWrite(5, HIGH);
+	}
 }
