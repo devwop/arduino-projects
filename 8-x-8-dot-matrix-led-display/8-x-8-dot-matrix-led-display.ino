@@ -13,8 +13,12 @@ void loop() {
 		digitalWrite(digital[i], HIGH);
 
 		for (int j = 0; j <= 7; j++) {
-			if (wordCode[i]&1 << j) { digitalWrite(9 - j, HIGH); }
-			else { digitalWrite(9 - j, LOW); }
+			if (wordCode[i]&1 << j) {
+				digitalWrite(9 - j, HIGH);
+			}
+			else {
+				digitalWrite(9 - j, LOW);
+			}
 		}
 
 		delayMicroseconds(1000);
