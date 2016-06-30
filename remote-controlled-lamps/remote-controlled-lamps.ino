@@ -10,7 +10,15 @@ void setup() {
 }
 
 void loop() {
-	if (irrecv.decode(&results)) { irrecv.resume(); }
-	if (results.value == 0x00FF02FD) { digitalWrite(3, LOW); }
-	if (results.value == 0x00FF22DD) { digitalWrite(3, HIGH); }
+	if (irrecv.decode(&results)) {
+		irrecv.resume();
+	}
+
+	if (results.value == 0x00FF02FD) {
+		digitalWrite(3, LOW);
+	}
+
+	if (results.value == 0x00FF22DD) {
+		digitalWrite(3, HIGH);
+	}
 }
