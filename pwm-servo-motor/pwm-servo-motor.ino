@@ -2,7 +2,9 @@
 
 Servo servo;
 
-void setup() { servo.attach(9); }
+void setup() {
+	servo.attach(9);
+}
 
 void loop() {
 	int value = analogRead(A0);
