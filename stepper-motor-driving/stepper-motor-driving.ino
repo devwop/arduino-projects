@@ -1,16 +1,19 @@
 void setup() {
-	pinMode(8, OUTPUT);
-	pinMode(9, OUTPUT);
-	pinMode(10, OUTPUT);
-	pinMode(11, OUTPUT);
+	for (int i = 8; i <= 11; i++) {
+		pinMode(i, OUTPUT);
+	}
 }
 
 void loop() {
-	for (int i = 0; i < 512; i++) { clockWiseRotate(); }
+	for (int i = 0; i < 512; i++) {
+		clockWiseRotate();
+	}
 
 	delay(1000);
 
-	for (int i = 0; i < 512; i++) { counterClockWiseRotate(); }
+	for (int i = 0; i < 512; i++) {
+		counterClockWiseRotate();
+	}
 
 	delay(1000);
 }
