@@ -1,6 +1,8 @@
-void setup() { Serial.begin(9600); }
+void setup() {
+	Serial.begin(9600);
+}
 
 void loop() {
-	Serial.println("Example");
+	Serial.println("<  Write here  >");
 	while(1);
 }
