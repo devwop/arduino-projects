@@ -1,5 +1,7 @@
 // SENDER
-void setup() { pinMode(3, OUTPUT); }
+void setup() {
+	pinMode(3, OUTPUT);
+}
 
 void loop() {
 	for (int i = 0; i < 100; i++) {
@@ -22,6 +24,10 @@ void setup() {
 void loop() {
 	int signalState = digitalRead(2);
 
-	if (signalState) { digitalWrite(10, LOW); }
-	else { digitalWrite(10, HIGH); }
+	if (signalState) {
+		digitalWrite(10, LOW);
+	}
+	else {
+		digitalWrite(10, HIGH);
+	}
 }
