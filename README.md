@@ -6,7 +6,7 @@ Lovely adventures regarding Arduino containing a 1602 LCD, a few LED controlled 
 
 - Open your terminal `:)`
 - Clone the repository
-  - `git clone https://github.com/nelsongsdev/arduino-adventures.git`
+  - `git clone https://github.com/nelsonsilvadev/arduino-adventures.git`
 - Enter to the repository directory
   - `cd arduino-adventures`
 - Now you have access to the code regarding some Arduino adventures
